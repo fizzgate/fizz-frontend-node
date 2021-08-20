@@ -34,3 +34,6 @@ var Constant = (function(){
 })();
 ```
 
+4、注意：注意该项目为webpack打包产物，不能直接启动，可通过nginx进行启动
+
+
