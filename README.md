@@ -10,7 +10,7 @@ Fizz网关管理后台是Fizz Gateway的配套系统，基于Java、Vue开发，
 
 
 ## 前端模块项目开发说明
-1、fizz管理后台使用 qiakun 进行模块集成
+1、fizz管理后台使用 qiankun 进行模块集成
 
 2、module/mysql 为示例代码（使用vue框架），可在其基础上进行修改;
    也可以使用react、angular 等其他技术框架开发
