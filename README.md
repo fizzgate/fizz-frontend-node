@@ -36,4 +36,13 @@ var Constant = (function(){
 
 4、注意：注意该项目为webpack打包产物，不能直接启动，可通过nginx进行启动
 
+5、开发步骤：
+- 将除module外的文件，放在nginx后，启动nginx把项目跑起来
+- module/mysql 项目启动起来，操作如下：
+```
+    yarn
+    yarn run serve
+```
+- 可直接对 module/mysql 项目进行修改，也可参考该示例项目，自定义开发。
+
 
