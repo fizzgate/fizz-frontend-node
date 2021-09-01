@@ -4,7 +4,7 @@ var Constant = (function(){
             plugins:{
                 mysql:{
                     "name" : "mysqlItem",
-                    "entry": NODE_ENV === 'development' ? "//localhost:1890" : '/module/mysql/index.html'
+                    "entry": NODE_ENV === 'development' ? "//localhost:1890/module/mysql" : '/module/mysql/index.html'
                 }
             }
         }
