@@ -1,11 +1,3 @@
-const webpack = require('webpack');
-const version = process.env.VERSION || require('./package.json').version;
-const banner =
-  'Fizz-Admin v' + version +
-  '\n' +
-  '(c) 2020-' + new Date().getFullYear() + ' Joker-Lee' +
-  '\n' +
-  'AGPL v3 Licensed.';
 const packageName = require('./package.json').name;
 
 module.exports = {
