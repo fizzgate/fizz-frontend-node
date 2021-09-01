@@ -14,7 +14,8 @@ const routes = [
 
 const router = new VueRouter({
   mode: "abstract",
-  base: "/",
+  // base: "/",
+  base: window.__POWERED_BY_QIANKUN__ ? '/' : '/module/mysql/',
   routes
 })
 

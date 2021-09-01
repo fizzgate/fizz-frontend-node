@@ -10,8 +10,8 @@ const packageName = require('./package.json').name;
 
 module.exports = {
   //路径前缀
-  publicPath: "/",
-  outputDir: "dist",
+  publicPath: "/module/mysql",
+  outputDir: "mysql",
   lintOnSave: true,
   productionSourceMap: false,
   configureWebpack: {
