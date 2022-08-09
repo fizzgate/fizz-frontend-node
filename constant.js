@@ -4,7 +4,7 @@ var Constant = (function(){
             plugins:[
                 {
                     "name" : "mysql",
-                    "entry": NODE_ENV === 'development' ? "//localhost:1890/module/mysql/" : '/module/open-document/mysql.html'
+                    "entry": NODE_ENV === 'development' ? "//localhost:1890/module/mysql/" : '/module/mysql/index.html'
                 }
             ]
         }
