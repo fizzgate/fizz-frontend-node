@@ -1,6 +1,6 @@
 /*!
- * Fizz-Admin v2.2.3
- * (c) 2020-2021 Joker-Lee
+ * Fizz-Admin v2.6.6
+ * (c) 2020-2022 Joker-Lee
  * AGPL v3 Licensed.
  */
 (window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d21dcd2"],{d39f:function(e,o,t){"use strict";t.r(o),t.d(o,"conf",(function(){return n})),t.d(o,"language",(function(){return i}));
