@@ -1,5 +1,5 @@
 <template>
-  <div id="app-mysql">
+  <div class="app-mysql">
     <router-view />
   </div>
 </template>

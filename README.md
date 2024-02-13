@@ -45,4 +45,12 @@ var Constant = (function(){
 ```
 - 可直接对 module/mysql 项目进行修改，也可参考该示例项目，自定义开发。
 
+6、动态组件需要使用module/mysql中打包命令
+
+```
+    yarn run build
+```
+
+之后进入dist目录中（一定要进入目录中），压缩所有文件，将文件上传到管理后台
+
 
