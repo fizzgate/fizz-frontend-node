@@ -3,10 +3,10 @@
     <div class="node-request-head">调用节点ID：{{model.id}}</div>
     <div class="node-request-body">
     <div>
-      {{model.properties.serviceName ? "服务名："+model.properties.serviceName: ""}}
+      {{model.properties.className ? "类名："+model.properties.className: ""}}
     </div>
     <div>
-      {{model.properties.path ? "路径："+model.properties.path: ""}}
+      {{model.properties.methodName ? "路径："+model.properties.methodName: ""}}
     </div>
     </div>
     <div class="node-request-footer">
