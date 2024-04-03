@@ -10,16 +10,37 @@ Vue.use(router);
 // Vue.use(VueAxios, axios);
 Vue.use(Element);
 Vue.use(window.AVUE);
-
+let lastNode = {};
 function domRender(activePath, props, selector) {
   if (activePath){
+    const {model} = props;
     let components = router.getMatchedComponents(activePath);
     if (components.length > 0){
-      new Vue({
-        store,
-        // i18n,
-        render: h => h(components[0], {props:props}),
-      }).$mount( selector );
+      if (activePath == '/node' ){
+        if (lastNode[activePath]){
+          lastNode[activePath].$children[0].props = props;
+          // 获取示例化之后的组件
+          lastNode[activePath].$children[0].$forceUpdate();
+        } else {
+          lastNode[activePath] =  new Vue({
+            store,
+            // i18n,
+            render: h => h(components[0], {props:props}),
+          }).$mount( selector );
+        }
+      } else {
+        if ( lastNode[activePath + model.id]){
+          lastNode[activePath + model.id].$children[0].props = props;
+          // 获取示例化之后的组件
+          lastNode[activePath + model.id].$children[0].$forceUpdate();
+        } else {
+          lastNode[activePath + model.id] =  new Vue({
+            store,
+            // i18n,
+            render: h => h(components[0], {props:props}),
+          }).$mount( selector );
+        }
+      }
     }
   } else {
     new Vue({
